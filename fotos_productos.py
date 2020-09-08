@@ -23,4 +23,5 @@ for x in range(0,len(ids)):
     mydb.commit()
     print(mycursor.rowcount, "record inserted.")
 
-
+mycursor.close()
+mydb.close()
